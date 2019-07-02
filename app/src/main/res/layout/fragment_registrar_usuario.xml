@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/idLayoutRegistrar"
-    tools:context="co.quindio.sena.tutorialwebservice.fragments.RegistrarUsuarioFragment">
+    tools:context="co.app.viajero.viajero_seguro.fragments.RegistrarUsuarioFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,11 +27,11 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/campoDoc"
+                android:id="@+id/campoNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:hint="Documento"/>
+                android:hint="Nombre"/>
 
             <Button
                 android:id="@+id/btnFoto"
@@ -45,16 +45,16 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/campoNombre"
+            android:id="@+id/campoEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre"/>
+            android:hint="Email"/>
 
         <EditText
-            android:id="@+id/campoProfesion"
+            android:id="@+id/campoNacionalidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Profesion"/>
+            android:hint="Nacionalidad"/>
 
 
         <ImageView

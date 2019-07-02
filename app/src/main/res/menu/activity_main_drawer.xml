@@ -5,32 +5,28 @@
         <item
             android:id="@+id/nav_inicio"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="Inicio" />
-
-        <item
-            android:id="@+id/nav_registro"
-            android:icon="@android:drawable/ic_menu_add"
-            android:title="Registrar usuario" />
-        <item
-            android:id="@+id/nav_consulta_individual"
-            android:icon="@android:drawable/ic_menu_search"
-            android:title="Consultar Usuario" />
-        <item
-            android:id="@+id/nav_consulta_Url"
-            android:icon="@android:drawable/ic_menu_search"
-            android:title="Consultar Usuario con URL" />
-        <item
-            android:id="@+id/nav_consulta_gral"
-            android:icon="@android:drawable/ic_menu_search"
-            android:title="Consultar Lista de Usuarios" />
-        <item
-            android:id="@+id/nav_consulta_gral_img"
-            android:icon="@android:drawable/ic_menu_search"
-            android:title="Lista de Usuarios Imagen" />
+            android:title="INICIO" />
         <item
             android:id="@+id/nav_consulta_gral_img_url"
             android:icon="@android:drawable/ic_menu_search"
-            android:title="Lista de Usuarios Imagen URL" />
+            android:title="ANTES DE VIAJAR" />
+        <item
+            android:id="@+id/nav_consulta_gral_img"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="DURANTE EL VIAJE" />
+
+        <item
+            android:id="@+id/nav_consulta_Url"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="DESPUES DEL VIAJE" />
+        <item
+            android:id="@+id/nav_registro"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="REGISTRAR USUARIO" />
+        <item
+            android:id="@+id/nav_consulta_individual"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="CONSULTAR USUARIO" />
     </group>
 
     <item android:title="Información">
@@ -38,7 +34,7 @@
             <item
                 android:id="@+id/nav_desarrollador"
                 android:icon="@android:drawable/ic_menu_myplaces"
-                android:title="Desarrollador" />
+                android:title="DESARROLLADORES @ -_-" />
         </menu>
     </item>
 

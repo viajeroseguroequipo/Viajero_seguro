@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.quindio.sena.tutorialwebservice.fragments.ConsultaUsuarioUrlFragment">
+    tools:context="co.app.viajero.viajero_seguro.fragments.ConsultaUsuarioUrlFragment">
 
 
     <!-- TODO: Update blank fragment layout -->

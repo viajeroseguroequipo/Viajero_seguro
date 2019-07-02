@@ -1,51 +1,101 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="co.quindio.sena.tutorialwebservice.fragments.DesarrolladorFragment">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.app.viajero.viajero_seguro.fragments.DesarrolladorFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="DESARROLLADOR"
-        android:gravity="center"
-        android:textSize="20sp"
         android:layout_marginBottom="20dp"
-        android:textStyle="bold"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1">
-
-        <ImageView
-            android:layout_width="133dp"
-            android:layout_height="156dp"
-            android:src="@drawable/cristian"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"/>
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="DESARROLLADORES"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Cristian David Henao\nCreador del Blog\ncodejavu.blogspot.com\nhttp://www.facebook.com/codejavu\nTwitter: @chenaooo"
-            android:textSize="12sp" />
-
-    </LinearLayout>
 
     <ImageView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:src="@drawable/logo"
-        android:layout_gravity="center"
-        android:layout_marginRight="10dp"/>
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+            android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
 
-</LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:text="ANYELA LEIDY REYES\nFicha\n201495A_612\n"
+        android:textColor="#5186dc"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+
+
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:text="RAMIRO ALEXIS OCAMPO\nFicha\n201495A_612\n"
+        android:textColor="#5186dc"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+
+
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="230dp"
+        android:text="JAVIER ANDRES CORREDOR\nFicha\n201495A_612\n"
+        android:textColor="#5186dc"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

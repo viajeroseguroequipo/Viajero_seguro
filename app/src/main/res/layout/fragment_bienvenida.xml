@@ -1,32 +1,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.quindio.sena.tutorialwebservice.fragments.BienvenidaFragment">
+    tools:context="co.app.viajero.viajero_seguro.fragments.BienvenidaFragment">
 
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="EJEMPLO CONEXION BD REMOTA MEDIANTE WEB SERVICE USANDO PHP, JSON, VOLLEY"
-        android:gravity="center"
-        android:textSize="20sp"
         android:layout_marginBottom="20dp"
-        android:textStyle="bold"
-        android:id="@+id/textView2" />
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="VIAJERO SEGURO TU APP INFORMATIVA PARA QUE TU VIAJE SEA MAS FACIL"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:layout_marginTop="30dp"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/imagen"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="132dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="casual"
+        android:text="Para Navegar en nuestra aplicación  utiliza nuestro menú de la parte Izquierda \n "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

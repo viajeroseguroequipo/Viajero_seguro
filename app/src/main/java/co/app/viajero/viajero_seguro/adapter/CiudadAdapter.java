@@ -1,0 +1,96 @@
+package co.app.viajero.viajero_seguro.adapter;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import java.util.List;
+import co.app.viajero.viajero_seguro.R;
+import co.app.viajero.viajero_seguro.entidades.Ciudad;
+
+/**
+ * Created by tecno on 1/07/2019.
+ */
+
+public class CiudadAdapter {
+
+    List<Ciudad> listaCiudad;
+
+    public CiudadAdapter(List<Ciudad> listaCiudad) {
+        this.listaCiudad = listaCiudad;
+    }
+
+
+    public CiudadAdapter.CiudadHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View vista= LayoutInflater.from(parent.getContext()).inflate(R.layout.ciudad_list,parent,false);
+        RecyclerView.LayoutParams layoutParams=new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        vista.setLayoutParams(layoutParams);
+        return new CiudadAdapter.CiudadHolder(vista);
+    }
+
+
+    public void onBindViewHolder(CiudadAdapter.CiudadHolder holder, int position) {
+        // holder.i.setText(listaCiudad.get(position).getCod().toString());
+     //   holder.idCiudad.setText(listaCiudad.get(position).getCiudad().toString());
+        holder.c1.setText(listaCiudad.get(position).getC1().toString());
+        holder.c2.setText(listaCiudad.get(position).getC2().toString());
+        holder.c3.setText(listaCiudad.get(position).getC3().toString());
+        holder.c4.setText(listaCiudad.get(position).getC4().toString());
+        holder.c5.setText(listaCiudad.get(position).getC5().toString());
+        holder.c6.setText(listaCiudad.get(position).getC6().toString());
+        holder.c7.setText(listaCiudad.get(position).getC7().toString());
+        holder.c8.setText(listaCiudad.get(position).getC8().toString());
+        holder.c9.setText(listaCiudad.get(position).getC9().toString());
+        holder.c10.setText(listaCiudad.get(position).getC10().toString());
+        holder.c11.setText(listaCiudad.get(position).getC11().toString());
+        holder.c12.setText(listaCiudad.get(position).getC12().toString());
+        holder.c13.setText(listaCiudad.get(position).getC13().toString());
+        holder.c14.setText(listaCiudad.get(position).getC14().toString());
+        holder.c15.setText(listaCiudad.get(position).getC15().toString());
+        holder.c16.setText(listaCiudad.get(position).getC16().toString());
+        holder.c17.setText(listaCiudad.get(position).getC17().toString());
+        holder.c18.setText(listaCiudad.get(position).getC18().toString());
+
+    }
+
+
+    public int getItemCount() {
+        return listaCiudad.size();
+    }
+
+    public class CiudadHolder extends RecyclerView.ViewHolder{
+
+        TextView c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18;
+
+        public CiudadHolder(View itemView) {
+            super(itemView);
+
+            c1= (TextView) itemView.findViewById(R.id.c1);
+            c2= (TextView) itemView.findViewById(R.id.c2);
+            c3= (TextView) itemView.findViewById(R.id.c3);
+            c4= (TextView) itemView.findViewById(R.id.c4);
+            c5= (TextView) itemView.findViewById(R.id.c5);
+            c6= (TextView) itemView.findViewById(R.id.c6);
+            c7= (TextView) itemView.findViewById(R.id.c7);
+            c8= (TextView) itemView.findViewById(R.id.c8);
+            c9= (TextView) itemView.findViewById(R.id.c9);
+            c10= (TextView) itemView.findViewById(R.id.c10);
+            c11= (TextView) itemView.findViewById(R.id.c11);
+            c12= (TextView) itemView.findViewById(R.id.c12);
+            c13= (TextView) itemView.findViewById(R.id.c13);
+            c14= (TextView) itemView.findViewById(R.id.c14);
+            c15= (TextView) itemView.findViewById(R.id.c15);
+            c16= (TextView) itemView.findViewById(R.id.c16);
+            c17= (TextView) itemView.findViewById(R.id.c17);
+            c18= (TextView) itemView.findViewById(R.id.c18);
+
+
+
+
+        }
+    }
+
+
+}
+
