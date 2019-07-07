@@ -265,6 +265,17 @@
                android:textColor="@color/colorPrimary"
                android:textSize="18sp" />
 
+           <Button
+               android:id="@+id/Regresar"
+               android:layout_width="120dp"
+               android:layout_height="37dp"
+               android:layout_marginBottom="50dp"
+               android:layout_marginLeft="5dp"
+               android:background="@color/colorPrimary"
+               android:text="Volver"
+               tools:layout_editor_absoluteX="34dp"
+               android:textColor="?attr/colorBackgroundFloating" />
+
 
        </LinearLayout>
    </ScrollView>

@@ -42,7 +42,9 @@
         <activity
             android:name=".Ver_informacion_ciudad"
             android:label="@string/title_activity_ver_informacion_ciudad"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ver_informacion_sitios"></activity>
     </application>
 
 </manifest>

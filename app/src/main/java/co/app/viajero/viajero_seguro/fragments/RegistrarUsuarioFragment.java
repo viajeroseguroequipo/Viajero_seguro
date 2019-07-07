@@ -377,7 +377,7 @@ public class RegistrarUsuarioFragment extends Fragment {
 
         String ip=getString(R.string.ip);
 
-        String url=ip+"archivos/ejemploBDRemota/wsJSONRegistroMovil.php?";
+        String url=ip+"archivos/ejemploBDRemota/wsJSONRegistroMovil.php";
 
         stringRequest=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
 

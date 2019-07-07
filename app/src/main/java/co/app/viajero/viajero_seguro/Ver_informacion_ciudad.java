@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -19,10 +21,8 @@ public class Ver_informacion_ciudad extends AppCompatActivity  {
 
 
 
-    TextView _view;
-    ViewGroup _root;
-    private int _xDelta;
-    private int _yDelta;
+    Button buttonr;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,11 +133,20 @@ public class Ver_informacion_ciudad extends AppCompatActivity  {
 */
 
 
+
+        buttonr  = (Button) findViewById(R.id.Regresar);
+        buttonr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();  //Para regresar a la vista anterior
+
+                //Intent i = new Intent(DosActivity.this, SplashActivity.class);  //Para ir a una vista específica
+                //startActivity(i);
+            }
+        });
     }
 
 
-    public void Anterior(View view){
-        Intent anterior = new Intent(this,BienvenidaFragment.class);
-        startActivity(anterior);
+
+
     }
-}

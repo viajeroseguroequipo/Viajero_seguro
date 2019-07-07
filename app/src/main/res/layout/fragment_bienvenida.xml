@@ -26,11 +26,35 @@
         android:layout_below="@+id/textView2"
         android:layout_marginLeft="132dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="casual"
-        android:text="Para Navegar en nuestra aplicación  utiliza nuestro menú de la parte Izquierda \n "
+        android:text="Para Navegar en nuestra aplicación  utiliza nuestro menú de la parte Izquierda "
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="300dp"
+        android:text="Visitanos en nuestro Blog" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="340dp"
+        android:text="https://viajeroseguro2019.blogspot.com/"
+        android:textColor="@color/colorPrimary" />
 
 
 </RelativeLayout>

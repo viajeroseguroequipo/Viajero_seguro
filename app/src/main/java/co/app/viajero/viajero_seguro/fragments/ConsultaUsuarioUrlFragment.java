@@ -77,9 +77,9 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    EditText txtDocumento;
-    EditText etiNombre;//SE MODIFICA
-    EditText etiProfesion;//SE MODIFICA
+    EditText campoNombre;
+    EditText campoEmail;//SE MODIFICA
+    EditText campoNacionalidad;//SE MODIFICA
     ProgressDialog pDialog;
     ImageButton btnConsultar;//SE MODIFICA
     ImageView campoImagen;
@@ -139,9 +139,9 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
                              Bundle savedInstanceState) {
         View vista= inflater.inflate(R.layout.fragment_consulta_usuario_url, container, false);
 
-        txtDocumento= (EditText) vista.findViewById(R.id.campoDocumento);
-        etiNombre= (EditText) vista.findViewById(R.id.txtNombre);
-        etiProfesion= (EditText) vista.findViewById(R.id.txtProfesion);
+        campoNombre= (EditText) vista.findViewById(R.id.campoNombre);
+        campoEmail= (EditText) vista.findViewById(R.id.campoEmail);
+        campoNacionalidad= (EditText) vista.findViewById(R.id.campoNacionalidad);
         btnConsultar= (ImageButton) vista.findViewById(R.id.btnConsultarUsuario);//SE MODIFICA
         campoImagen= (ImageView) vista.findViewById(R.id.imagenId);
         btnActualizar=(Button) vista.findViewById(R.id.btnActualizar);//SE MODIFICA
@@ -203,7 +203,7 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
 
         final String ip=getString(R.string.ip);
 
-        String url=ip+"archivos/ejemploBDRemota/wsJSONConsultarUsuarioUrl.php?documento="+txtDocumento.getText().toString();
+        String url=ip+"archivos/ejemploBDRemota/wsJSONConsultarUsuarioUrl.php?nombre="+campoNombre.getText().toString();
 
         jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -224,8 +224,8 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
                     e.printStackTrace();
                 }
 
-                etiNombre.setText(miUsuario.getNombre());//SE MODIFICA
-                etiProfesion.setText(miUsuario.getEmail());//SE MODIFICA
+                campoEmail.setText(miUsuario.getNombre());//SE MODIFICA
+                campoNacionalidad.setText(miUsuario.getEmail());//SE MODIFICA
 
                 String urlImagen=ip+"/ejemploBDRemota/"+miUsuario.getRutaImagen();
                 //Toast.makeText(getContext(), "url "+urlImagen, Toast.LENGTH_LONG).show();
@@ -285,9 +285,9 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
                 pDialog.hide();
 
                 if (response.trim().equalsIgnoreCase("actualiza")){
-                   // etiNombre.setText("");
-                  //  txtDocumento.setText("");
-                 //   etiProfesion.setText("");
+                   // campoEmail.setText("");
+                  //  campoNombre.setText("");
+                 //   campoNacionalidad.setText("");
                     Toast.makeText(getContext(),"Se ha Actualizado con exito",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getContext(),"No se ha Actualizado ",Toast.LENGTH_SHORT).show();
@@ -304,16 +304,16 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                String documento=txtDocumento.getText().toString();
-                String nombre=etiNombre.getText().toString();
-                String profesion=etiProfesion.getText().toString();
+                String nombre=campoNombre.getText().toString();
+                String email=campoEmail.getText().toString();
+                String nacionalidad=campoNacionalidad.getText().toString();
 
                 String imagen=convertirImgString(bitmap);
 
                 Map<String,String> parametros=new HashMap<>();
-                parametros.put("documento",documento);
                 parametros.put("nombre",nombre);
-                parametros.put("profesion",profesion);
+                parametros.put("email",email);
+                parametros.put("nacionalidad",nacionalidad);
                 parametros.put("imagen",imagen);
 
                 return parametros;
@@ -340,7 +340,7 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
 
         String ip=getString(R.string.ip);
 
-        String url=ip+"/ejemploBDRemota/wsJSONDeleteMovil.php?documento="+txtDocumento.getText().toString();
+        String url=ip+"/ejemploBDRemota/wsJSONDeleteMovil.php?nombre="+campoNombre.getText().toString();
 
         stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -348,9 +348,9 @@ public class ConsultaUsuarioUrlFragment extends Fragment {
                 pDialog.hide();
 
                 if (response.trim().equalsIgnoreCase("elimina")){
-                    etiNombre.setText("");
-                    txtDocumento.setText("");
-                    etiProfesion.setText("");
+                    campoNombre.setText("");
+                    campoEmail.setText("");
+                    campoNacionalidad.setText("");
                     campoImagen.setImageResource(R.drawable.img_base);
                     Toast.makeText(getContext(),"Se ha Eliminado con exito",Toast.LENGTH_SHORT).show();
                 }else{

@@ -29,11 +29,11 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/campoDocumento"
+                android:id="@+id/campoNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Documento"
-                android:layout_weight=".5"/>
+                android:layout_weight=".5"
+                android:hint="Documento" />
 
             <ImageButton
                 android:id="@+id/btnConsultarUsuario"

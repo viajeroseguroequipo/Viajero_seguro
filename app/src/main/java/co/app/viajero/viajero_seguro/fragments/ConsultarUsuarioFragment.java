@@ -54,8 +54,8 @@ public class ConsultarUsuarioFragment extends Fragment implements Response.Liste
 
     private OnFragmentInteractionListener mListener;
 
-    EditText campoDocumento;
-    TextView txtNombre,txtProfesion;
+    EditText campoNombre;
+    TextView campoEmail,campoNacionalidad;
     Button btnConsultarUsuario;
     ProgressDialog progreso;
     ImageView campoImagen;
@@ -101,9 +101,9 @@ public class ConsultarUsuarioFragment extends Fragment implements Response.Liste
                              Bundle savedInstanceState) {
         View vista=inflater.inflate(R.layout.fragment_consultar_usuario, container, false);
 
-        campoDocumento= (EditText) vista.findViewById(R.id.campoDocumento);
-        txtNombre= (TextView) vista.findViewById(R.id.txtNombre);
-        txtProfesion= (TextView) vista.findViewById(R.id.txtProfesion);
+        campoNombre= (EditText) vista.findViewById(R.id.campoNombre);
+        campoEmail= (TextView) vista.findViewById(R.id.campoEmail);
+        campoNacionalidad= (TextView) vista.findViewById(R.id.campoNacionalidad);
         btnConsultarUsuario= (Button) vista.findViewById(R.id.btnConsultarUsuario);
         campoImagen=(ImageView) vista.findViewById(R.id.imagenId);
 
@@ -129,8 +129,8 @@ public class ConsultarUsuarioFragment extends Fragment implements Response.Liste
 
         String ip=getString(R.string.ip);
 
-        String url=ip+"archivos/ejemploBDRemota/wsJSONConsultarUsuarioImagen.php?documento="
-                +campoDocumento.getText().toString();
+        String url=ip+"archivos/ejemploBDRemota/wsJSONConsultarUsuarioImagen.php?nombre="
+                +campoNombre.getText().toString();
 
         jsonObjectRequest=new JsonObjectRequest(Request.Method.GET,url,null,this,this);
        // request.add(jsonObjectRequest);
@@ -165,8 +165,8 @@ public class ConsultarUsuarioFragment extends Fragment implements Response.Liste
             e.printStackTrace();
         }
 
-        txtNombre.setText("Nombre :"+miUsuario.getNombre());
-        txtProfesion.setText("Email :"+miUsuario.getEmail());
+        campoEmail.setText("Nombre :"+miUsuario.getNombre());
+        campoNacionalidad.setText("Email :"+miUsuario.getEmail());
 
         if (miUsuario.getImagen()!=null){
             campoImagen.setImageBitmap(miUsuario.getImagen());

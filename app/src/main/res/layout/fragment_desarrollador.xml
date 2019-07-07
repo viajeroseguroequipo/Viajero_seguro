@@ -26,7 +26,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
-            android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"  />
 
@@ -50,7 +50,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="110dp"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"  />
@@ -63,7 +63,7 @@
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="140dp"
         android:text="RAMIRO ALEXIS OCAMPO\nFicha\n201495A_612\n"
         android:textColor="#5186dc"
         android:textSize="14sp"
@@ -75,7 +75,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="180dp"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"  />
@@ -88,8 +88,33 @@
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="210dp"
         android:text="JAVIER ANDRES CORREDOR\nFicha\n201495A_612\n"
+        android:textColor="#5186dc"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="245dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+
+
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="280dp"
+        android:text="RUBEN JAIR RUBIO\nFicha\n201495A_612\n"
         android:textColor="#5186dc"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
