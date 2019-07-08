@@ -7,6 +7,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- escribir en memoria para guardar las fotos -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <!-- leer las imagenes guardadas en la galeria -->
     <application
         android:allowBackup="true"
@@ -44,7 +51,21 @@
             android:label="@string/title_activity_ver_informacion_ciudad"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ver_informacion_sitios"></activity>
+        <activity
+            android:name=".Ver_informacion_sitios"
+            android:label="@string/title_activity_ver_informacion_sitios"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ver_informacion_alojamiento"
+            android:label="@string/title_activity_ver_informacion_alojamiento"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ver_informacion_trasnporte"
+            android:label="@string/title_activity_ver_informacion_trasnporte"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
     </application>
 
 </manifest>

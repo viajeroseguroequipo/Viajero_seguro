@@ -20,7 +20,10 @@ import java.util.List;
 
 import co.app.viajero.viajero_seguro.R;
 import co.app.viajero.viajero_seguro.Ver_informacion;
+import co.app.viajero.viajero_seguro.Ver_informacion_alojamiento;
 import co.app.viajero.viajero_seguro.Ver_informacion_ciudad;
+import co.app.viajero.viajero_seguro.Ver_informacion_sitios;
+import co.app.viajero.viajero_seguro.Ver_informacion_trasnporte;
 import co.app.viajero.viajero_seguro.entidades.Ciudad;
 import co.app.viajero.viajero_seguro.entidades.VolleySingleton;
 
@@ -76,6 +79,22 @@ public class CiudadImagenUrlAdapter extends RecyclerView.Adapter<CiudadImagenUrl
         holder.c16.setText(listaCiudad.get(position).getC16().toString());
         holder.c17.setText(listaCiudad.get(position).getC17().toString());
         holder.c18.setText(listaCiudad.get(position).getC18().toString());
+        holder.c19.setText(listaCiudad.get(position).getC19().toString());
+        holder.c20.setText(listaCiudad.get(position).getC20().toString());
+        holder.c21.setText(listaCiudad.get(position).getC21().toString());
+        holder.c22.setText(listaCiudad.get(position).getC22().toString());
+        holder.c23.setText(listaCiudad.get(position).getC23().toString());
+        holder.c24.setText(listaCiudad.get(position).getC24().toString());
+        holder.c25.setText(listaCiudad.get(position).getC25().toString());
+        holder.c26.setText(listaCiudad.get(position).getC26().toString());
+        holder.c27.setText(listaCiudad.get(position).getC27().toString());
+        holder.c28.setText(listaCiudad.get(position).getC28().toString());
+        holder.c29.setText(listaCiudad.get(position).getC29().toString());
+        holder.c30.setText(listaCiudad.get(position).getC30().toString());
+        holder.c31.setText(listaCiudad.get(position).getC31().toString());
+        holder.c32.setText(listaCiudad.get(position).getC32().toString());
+        holder.c33.setText(listaCiudad.get(position).getC33().toString());
+        holder.c34.setText(listaCiudad.get(position).getC34().toString());
 
 
 
@@ -121,10 +140,10 @@ public class CiudadImagenUrlAdapter extends RecyclerView.Adapter<CiudadImagenUrl
 
     public class CiudadHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18;
+        TextView c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, c27, c28, c29, c30, c31, c32, c33, c34;
         ImageView imagen;
         Context context;
-        Button b7OnClickListener;
+        Button b7OnClickListener,b8OnClickListener,b9OnClickListener,b10OnClickListener;
 
         public CiudadHolder(View itemView) {
             super(itemView);
@@ -148,15 +167,38 @@ public class CiudadImagenUrlAdapter extends RecyclerView.Adapter<CiudadImagenUrl
             c16= (TextView) itemView.findViewById(R.id.c16);
             c17= (TextView) itemView.findViewById(R.id.c17);
             c18= (TextView) itemView.findViewById(R.id.c18);
+            c19= (TextView) itemView.findViewById(R.id.c19);
+            c20= (TextView) itemView.findViewById(R.id.c20);
+            c21= (TextView) itemView.findViewById(R.id.c21);
+            c22= (TextView) itemView.findViewById(R.id.c22);
+            c23= (TextView) itemView.findViewById(R.id.c23);
+            c24= (TextView) itemView.findViewById(R.id.c24);
+            c25= (TextView) itemView.findViewById(R.id.c25);
+            c26= (TextView) itemView.findViewById(R.id.c26);
+            c27= (TextView) itemView.findViewById(R.id.c27);
+            c28= (TextView) itemView.findViewById(R.id.c28);
+            c29= (TextView) itemView.findViewById(R.id.c29);
+            c30= (TextView) itemView.findViewById(R.id.c30);
+            c31= (TextView) itemView.findViewById(R.id.c31);
+            c32= (TextView) itemView.findViewById(R.id.c32);
+            c33= (TextView) itemView.findViewById(R.id.c33);
+            c34= (TextView) itemView.findViewById(R.id.c34);
 
             imagen = (ImageView) itemView.findViewById(R.id.idImagen);
             b7OnClickListener = (Button) itemView.findViewById(R.id.b7OnClickListener);
+            b8OnClickListener = (Button) itemView.findViewById(R.id.b8OnClickListener);
+            b9OnClickListener = (Button) itemView.findViewById(R.id.b9OnClickListener);
+            b10OnClickListener = (Button) itemView.findViewById(R.id.b10OnClickListener);
 
 
         }
 
         void setOnclicklisteners() {
+
             b7OnClickListener.setOnClickListener(this);
+            b8OnClickListener.setOnClickListener(this);
+            b9OnClickListener.setOnClickListener(this);
+            b10OnClickListener.setOnClickListener(this);
         }
 
         @Override
@@ -171,20 +213,53 @@ public class CiudadImagenUrlAdapter extends RecyclerView.Adapter<CiudadImagenUrl
                     intent.putExtra("c4",c4.getText());
                     intent.putExtra("c5",c5.getText());
                     intent.putExtra("c6",c6.getText());
-                    intent.putExtra("c7",c7.getText());
-                    intent.putExtra("c8",c8.getText());
-                    intent.putExtra("c9",c9.getText());
-                    intent.putExtra("c10",c10.getText());
-                    intent.putExtra("c11",c11.getText());
-                    intent.putExtra("c12",c12.getText());
-                    intent.putExtra("c13",c13.getText());
-                    intent.putExtra("c14",c14.getText());
-                    intent.putExtra("c15",c15.getText());
-                    intent.putExtra("c16",c16.getText());
-                    intent.putExtra("c17",c17.getText());
-                    intent.putExtra("c18",c18.getText());
 
                     context.startActivity(intent);
+                    break;
+                case R.id.b8OnClickListener:
+                    Intent intent1 = new Intent(context, Ver_informacion_sitios.class);
+                    intent1.putExtra("c7",c7.getText());
+                    intent1.putExtra("c8",c8.getText());
+                    intent1.putExtra("c9",c9.getText());
+                    intent1.putExtra("c10",c10.getText());
+                    intent1.putExtra("c11",c11.getText());
+                    intent1.putExtra("c12",c12.getText());
+                    intent1.putExtra("c13",c13.getText());
+                    intent1.putExtra("c14",c14.getText());
+                    intent1.putExtra("c15",c15.getText());
+                    intent1.putExtra("c16",c16.getText());
+                    intent1.putExtra("c17",c17.getText());
+                    intent1.putExtra("c18",c18.getText());
+
+                    context.startActivity(intent1);
+                    break;
+
+                case R.id.b9OnClickListener:
+                    Intent intent2 = new Intent(context, Ver_informacion_alojamiento.class);
+                    intent2.putExtra("c19",c19.getText());
+                    intent2.putExtra("c20",c20.getText());
+                    intent2.putExtra("c21",c21.getText());
+                    intent2.putExtra("c22",c22.getText());
+                    intent2.putExtra("c23",c23.getText());
+                    intent2.putExtra("c24",c24.getText());
+                    intent2.putExtra("c25",c25.getText());
+                    intent2.putExtra("c26",c26.getText());
+                    intent2.putExtra("c27",c27.getText());
+                    intent2.putExtra("c28",c28.getText());
+                    intent2.putExtra("c29",c29.getText());
+                    intent2.putExtra("c30",c30.getText());
+                    context.startActivity(intent2);
+                    break;
+
+
+
+                case R.id.b10OnClickListener:
+                    Intent intent3 = new Intent(context, Ver_informacion_trasnporte.class);
+                    intent3.putExtra("c31",c31.getText());
+                    intent3.putExtra("c32",c32.getText());
+                    intent3.putExtra("c33",c33.getText());
+                    intent3.putExtra("c34",c34.getText());
+                    context.startActivity(intent3);
                     break;
             }
         }

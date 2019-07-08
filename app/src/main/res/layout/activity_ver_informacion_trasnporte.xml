@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.app.viajero.viajero_seguro.Ver_informacion_sitios">
+    tools:context="co.app.viajero.viajero_seguro.Ver_informacion_trasnporte">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,7 +20,8 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_ver_informacion_sitios" />
+    <include layout="@layout/content_ver_informacion_trasnporte" />
+
 
 
 </android.support.design.widget.CoordinatorLayout>

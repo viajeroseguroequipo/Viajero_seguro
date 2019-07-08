@@ -101,8 +101,8 @@ public class MainActivity extends AppCompatActivity
             miFragment=new ConsultaListaCiudadImagenUrlFragment();
             fragmentSeleccionado=true;
         }else if (id == R.id.nav_consulta_Url) {
-           // miFragment = new ConsultaUsuarioUrlFragment();
-            //fragmentSeleccionado = true;
+           miFragment = new PaginaWeb();
+            fragmentSeleccionado = true;
         }else if (id == R.id.nav_registro) {
             miFragment=new RegistrarUsuarioFragment();
             fragmentSeleccionado=true;

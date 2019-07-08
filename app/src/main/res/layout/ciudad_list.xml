@@ -136,6 +136,151 @@
             android:visibility="gone"/>
 
 
+        <TextView
+            android:id="@+id/c19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="211dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="211dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="211dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/c34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="211dp"
+            android:layout_marginTop="-24dp"
+            android:text="Codigo Postal "
+            android:visibility="gone" />
+
+
     </LinearLayout>
 
     <LinearLayout

@@ -51,6 +51,22 @@ public class CiudadAdapter {
         holder.c16.setText(listaCiudad.get(position).getC16().toString());
         holder.c17.setText(listaCiudad.get(position).getC17().toString());
         holder.c18.setText(listaCiudad.get(position).getC18().toString());
+        holder.c19.setText(listaCiudad.get(position).getC19().toString());
+        holder.c20.setText(listaCiudad.get(position).getC20().toString());
+        holder.c21.setText(listaCiudad.get(position).getC21().toString());
+        holder.c22.setText(listaCiudad.get(position).getC22().toString());
+        holder.c23.setText(listaCiudad.get(position).getC23().toString());
+        holder.c24.setText(listaCiudad.get(position).getC24().toString());
+        holder.c25.setText(listaCiudad.get(position).getC25().toString());
+        holder.c26.setText(listaCiudad.get(position).getC26().toString());
+        holder.c27.setText(listaCiudad.get(position).getC27().toString());
+        holder.c28.setText(listaCiudad.get(position).getC28().toString());
+        holder.c29.setText(listaCiudad.get(position).getC29().toString());
+        holder.c30.setText(listaCiudad.get(position).getC30().toString());
+        holder.c31.setText(listaCiudad.get(position).getC31().toString());
+        holder.c32.setText(listaCiudad.get(position).getC32().toString());
+        holder.c33.setText(listaCiudad.get(position).getC33().toString());
+        holder.c34.setText(listaCiudad.get(position).getC34().toString());
 
     }
 
@@ -61,7 +77,7 @@ public class CiudadAdapter {
 
     public class CiudadHolder extends RecyclerView.ViewHolder{
 
-        TextView c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18;
+        TextView c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, c27, c28, c29, c30, c31, c32, c33, c34;
 
         public CiudadHolder(View itemView) {
             super(itemView);
@@ -84,6 +100,22 @@ public class CiudadAdapter {
             c16= (TextView) itemView.findViewById(R.id.c16);
             c17= (TextView) itemView.findViewById(R.id.c17);
             c18= (TextView) itemView.findViewById(R.id.c18);
+            c19= (TextView) itemView.findViewById(R.id.c19);
+            c20= (TextView) itemView.findViewById(R.id.c20);
+            c21= (TextView) itemView.findViewById(R.id.c21);
+            c22= (TextView) itemView.findViewById(R.id.c22);
+            c23= (TextView) itemView.findViewById(R.id.c23);
+            c24= (TextView) itemView.findViewById(R.id.c24);
+            c25= (TextView) itemView.findViewById(R.id.c25);
+            c26= (TextView) itemView.findViewById(R.id.c26);
+            c27= (TextView) itemView.findViewById(R.id.c27);
+            c28= (TextView) itemView.findViewById(R.id.c28);
+            c29= (TextView) itemView.findViewById(R.id.c29);
+            c30= (TextView) itemView.findViewById(R.id.c30);
+            c31= (TextView) itemView.findViewById(R.id.c31);
+            c32= (TextView) itemView.findViewById(R.id.c32);
+            c33= (TextView) itemView.findViewById(R.id.c33);
+            c34= (TextView) itemView.findViewById(R.id.c34);
 
 
 

@@ -151,6 +151,22 @@ public class ConsultaListaCiudadImagenUrlFragment extends Fragment implements Re
                 Ciudad.setC16(jsonObject.optString("c16"));
                 Ciudad.setC17(jsonObject.optString("c17"));
                 Ciudad.setC18(jsonObject.optString("c18"));
+                Ciudad.setC19(jsonObject.optString("c19"));
+                Ciudad.setC20(jsonObject.optString("c20"));
+                Ciudad.setC21(jsonObject.optString("c21"));
+                Ciudad.setC22(jsonObject.optString("c22"));
+                Ciudad.setC23(jsonObject.optString("c23"));
+                Ciudad.setC24(jsonObject.optString("c24"));
+                Ciudad.setC25(jsonObject.optString("c25"));
+                Ciudad.setC26(jsonObject.optString("c26"));
+                Ciudad.setC27(jsonObject.optString("c27"));
+                Ciudad.setC28(jsonObject.optString("c28"));
+                Ciudad.setC29(jsonObject.optString("c29"));
+                Ciudad.setC30(jsonObject.optString("c30"));
+                Ciudad.setC31(jsonObject.optString("c31"));
+                Ciudad.setC32(jsonObject.optString("c32"));
+                Ciudad.setC33(jsonObject.optString("c33"));
+                Ciudad.setC34(jsonObject.optString("c34"));
                 Ciudad.setRutaImagen(jsonObject.optString("ruta_imagen"));
                 listaCiudad.add(Ciudad);
             }

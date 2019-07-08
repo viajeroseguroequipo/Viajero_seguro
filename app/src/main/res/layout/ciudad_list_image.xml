@@ -217,50 +217,202 @@
                 android:text="Codigo Postal "
                 android:visibility="gone" />
 
+            <TextView
+                android:id="@+id/c19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="211dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="211dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="211dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/c34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="211dp"
+                android:layout_marginTop="-24dp"
+                android:text="Codigo Postal "
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/b7OnClickListener"
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:contextClickable="false"
-                android:text="SITIOS DE INTERES"
-                android:textColor="?attr/colorBackgroundFloating" />
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:text="INFOMRACION GENERAL"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/b8OnClickListener"
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="130dp"
                 android:layout_marginTop="-50dp"
+                android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:contextClickable="false"
-                android:text="ALOJAMIENTO"
-                android:textColor="?attr/colorBackgroundFloating" />
+                android:drawableRight="@android:drawable/star_big_on"
+                android:text="SITIOS DE INTERES"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/b9OnClickListener"
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginTop="10dp"
+                android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:contextClickable="false"
-                android:text="TRANSPORTE"
-                android:textColor="?attr/colorBackgroundFloating" />
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:text="ALOJAMIENTO"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/b10OnClickListener"
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="130dp"
                 android:layout_marginTop="-50dp"
+                android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:contextClickable="false"
-                android:text="MAPA"
-                android:textColor="?attr/colorBackgroundFloating" />
+                android:drawableRight="@android:drawable/ic_menu_directions"
+                android:text="TRASNPORTE"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="12sp" />
 
 
         </LinearLayout>

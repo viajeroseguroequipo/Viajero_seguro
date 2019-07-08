@@ -6,7 +6,7 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="ip2">http://192.168.0.20</string>
+    <string name="ip2">http://192.168.0.20/</string>
     <string name="ip">https://www.colaboraweb.com/</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -14,4 +14,9 @@
     <string name="title_activity_main2">Ver Detalles</string>
     <string name="title_activity_ver_informacion">Ver Información</string>
     <string name="title_activity_ver_informacion_ciudad">Información Ciudad</string>
+    <string name="title_activity_ver_informacion_sitios">Información Sitios</string>
+    <string name="title_activity_ver_informacion_alojamiento">Información Alojamientos</string>
+    <string name="title_activity_ver_informacion_trasnporte">Información Trasnporte</string>
+    <string name="title_activity_pagina_web">Pagina Web</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

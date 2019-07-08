@@ -29,6 +29,22 @@ public class Ciudad{
         private String c16;
         private String c17;
         private String c18;
+    private String c19;
+    private String c20;
+    private String c21;
+    private String c22;
+    private String c23;
+    private String c24;
+    private String c25;
+    private String c26;
+    private String c27;
+    private String c28;
+    private String c29;
+    private String c30;
+    private String c31;
+    private String c32;
+    private String c33;
+    private String c34;
         private String dato;
         private Bitmap imagen;
         private String rutaImagen;
@@ -125,6 +141,38 @@ public class Ciudad{
     public void setC17(String c17) {this.c17 = c17;}
     public String getC18() {return c18;}
     public void setC18(String c18) {this.c18 = c18;}
+    public String getC19() {return c19;}
+    public void setC19(String c19) {this.c19 = c19;}
+    public String getC20() {return c20;}
+    public void setC20(String c20) {this.c20 = c20;}
+    public String getC21() {return c21;}
+    public void setC21(String c21) {this.c21 = c21;}
+    public String getC22() {return c22;}
+    public void setC22(String c22) {this.c22 = c22;}
+    public String getC23() {return c23;}
+    public void setC23(String c23) {this.c23 = c23;}
+    public String getC24() {return c24;}
+    public void setC24(String c24) {this.c24 = c24;}
+    public String getC25() {return c25;}
+    public void setC25(String c25) {this.c25 = c25;}
+    public String getC26() {return c26;}
+    public void setC26(String c26) {this.c26 = c26;}
+    public String getC27() {return c27;}
+    public void setC27(String c27) {this.c27 = c27;}
+    public String getC28() {return c28;}
+    public void setC28(String c28) {this.c28 = c28;}
+    public String getC29() {return c29;}
+    public void setC29(String c29) {this.c29 = c29;}
+    public String getC30() {return c30;}
+    public void setC30(String c30) {this.c30 = c30;}
+    public String getC31() {return c31;}
+    public void setC31(String c31) {this.c31 = c31;}
+    public String getC32() {return c32;}
+    public void setC32(String c32) {this.c32 = c32;}
+    public String getC33() {return c33;}
+    public void setC33(String c33) {this.c33 = c33;}
+    public String getC34() {return c34;}
+    public void setC34(String c34) {this.c34 = c34;}
 
 }
 
