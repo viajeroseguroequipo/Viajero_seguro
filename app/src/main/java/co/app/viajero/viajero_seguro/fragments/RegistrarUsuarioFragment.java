@@ -399,7 +399,7 @@ public class RegistrarUsuarioFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(),"No se ha podido conectar",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"Complete los campos Solicitados",Toast.LENGTH_SHORT).show();
                 progreso.hide();
             }
         }){
