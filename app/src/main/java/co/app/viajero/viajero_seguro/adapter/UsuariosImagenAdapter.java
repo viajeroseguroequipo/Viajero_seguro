@@ -1,6 +1,5 @@
 package co.app.viajero.viajero_seguro.adapter;
 
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import co.app.viajero.viajero_seguro.R;
-import co.app.viajero.viajero_seguro.Ver_informacion;
 import co.app.viajero.viajero_seguro.entidades.Usuario;
-import co.app.viajero.viajero_seguro.fragments.ConsultaListaUsuarioImagenUrlFragment;
 
 /**/
 

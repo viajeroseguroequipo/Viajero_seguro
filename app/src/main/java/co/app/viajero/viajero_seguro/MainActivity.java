@@ -15,11 +15,7 @@ import android.view.MenuItem;
 import co.app.viajero.viajero_seguro.fragments.BienvenidaFragment;
 import co.app.viajero.viajero_seguro.fragments.ConsultaListaCiudadImagenUrlFragment;
 import co.app.viajero.viajero_seguro.fragments.ConsultaListaPaisImagenUrlFragment;
-import co.app.viajero.viajero_seguro.fragments.ConsultaListaUsuarioImagenUrlFragment;
-import co.app.viajero.viajero_seguro.fragments.ConsultaUsuarioUrlFragment;
-import co.app.viajero.viajero_seguro.fragments.ConsultarListaUsuariosFragment;
 import co.app.viajero.viajero_seguro.fragments.ConsultarUsuarioFragment;
-import co.app.viajero.viajero_seguro.fragments.ConsutarListausuarioImagenFragment;
 import co.app.viajero.viajero_seguro.fragments.DesarrolladorFragment;
 import co.app.viajero.viajero_seguro.fragments.RegistrarUsuarioFragment;
 import co.app.viajero.viajero_seguro.interfaces.IFragments;
@@ -103,17 +99,16 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_consulta_Url) {
            miFragment = new PaginaWeb();
             fragmentSeleccionado = true;
+        }else if (id == R.id.nav_consulta_blog) {
+            miFragment = new Blog();
+            fragmentSeleccionado = true;
         }else if (id == R.id.nav_registro) {
             miFragment=new RegistrarUsuarioFragment();
             fragmentSeleccionado=true;
         } else if (id == R.id.nav_consulta_individual) {
             miFragment=new ConsultarUsuarioFragment();
             fragmentSeleccionado=true;
-        } /*
-            else if (id == R.id.nav_consulta_gral) {
-            miFragment=new ConsultarListaUsuariosFragment();
-            fragmentSeleccionado=true;
-        } */else if (id == R.id.nav_desarrollador) {
+        } else if (id == R.id.nav_desarrollador) {
             miFragment=new DesarrolladorFragment();
             fragmentSeleccionado=true;
         }
@@ -131,4 +126,6 @@ public class MainActivity extends AppCompatActivity
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+
 }

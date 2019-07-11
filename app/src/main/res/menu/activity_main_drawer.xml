@@ -19,6 +19,11 @@
             android:id="@+id/nav_consulta_Url"
             android:icon="@android:drawable/ic_menu_search"
             android:title="DESPUES DEL VIAJE" />
+
+        <item
+            android:id="@+id/nav_consulta_blog"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="CONOCE NUESTRO BLOG" />
         <item
             android:id="@+id/nav_registro"
             android:icon="@android:drawable/ic_menu_add"

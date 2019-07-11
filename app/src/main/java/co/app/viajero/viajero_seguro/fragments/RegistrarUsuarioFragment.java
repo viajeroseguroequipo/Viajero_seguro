@@ -43,6 +43,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import co.app.viajero.viajero_seguro.R;
 import co.app.viajero.viajero_seguro.entidades.VolleySingleton;
@@ -366,63 +368,89 @@ public class RegistrarUsuarioFragment extends Fragment {
 
     ///////////////
 
+    private boolean isValidEmailId(String email){
 
-
+        return Pattern.compile("^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+                + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+                + "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+                + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$").matcher(email).matches();
+    }
 
     private void cargarWebService() {
 
-        progreso=new ProgressDialog(getContext());
+
+
+
+        if (campoNombre.getText().toString().isEmpty() && campoEmail.getText().toString().isEmpty() && campoNacionalidad.getText().toString().isEmpty() ) {
+
+            Toast.makeText(getContext(), "Ingrese los Datos solicitados", Toast.LENGTH_SHORT).show();
+
+        }
+        else if(!isValidEmailId(campoEmail.getText().toString().trim()))
+        {
+            Toast.makeText(getContext(), "Ingrese un Email Valido", Toast.LENGTH_SHORT).show();
+        }
+
+        else {
+
+        progreso = new ProgressDialog(getContext());
         progreso.setMessage("Cargando...");
         progreso.show();
 
-        String ip=getString(R.string.ip);
+        String ip = getString(R.string.ip);
 
-        String url=ip+"archivos/ejemploBDRemota/wsJSONRegistroMovil.php";
 
-        stringRequest=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            String url = ip + "archivos/ejemploBDRemota/wsJSONRegistroMovil.php";
 
-            @Override
-            public void onResponse(String response) {
-                progreso.hide();
+            stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
 
-                if (response.trim().equalsIgnoreCase("registra")){
-                    campoNombre.setText("");
-                    campoEmail.setText("");
-                    campoNacionalidad.setText("");
-                    Toast.makeText(getContext(),"Se ha registrado con exito",Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getContext(),"No se ha registrado ",Toast.LENGTH_SHORT).show();
-                    Log.i("RESPUESTA: ",""+response);
+                @Override
+                public void onResponse(String response) {
+                    progreso.hide();
+
+                    if (response.trim().equalsIgnoreCase("registra")) {
+                        campoNombre.setText("");
+                        campoEmail.setText("");
+                        campoNacionalidad.setText("");
+                        Toast.makeText(getContext(), "Se ha registrado con exito", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getContext(), "No se ha registrado ", Toast.LENGTH_SHORT).show();
+                        Log.i("RESPUESTA: ", "" + response);
+                    }
+
                 }
-
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(getContext(), "Complete los campos Solicitados", Toast.LENGTH_SHORT).show();
+                    progreso.hide();
+                }
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(),"Complete los campos Solicitados",Toast.LENGTH_SHORT).show();
-                progreso.hide();
-            }
-        }){
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                String nombre=campoNombre.getText().toString();
-                String email=campoEmail.getText().toString();
-                String nacionalidad=campoNacionalidad.getText().toString();
+            ) {
+                @Override
+                protected Map<String, String> getParams() throws AuthFailureError {
+                    String nombre = campoNombre.getText().toString();
+                    String email = campoEmail.getText().toString();
+                    String nacionalidad = campoNacionalidad.getText().toString();
 
-                String imagen=convertirImgString(bitmap);
+                    String imagen = convertirImgString(bitmap);
 
-                Map<String,String> parametros=new HashMap<>();
-                parametros.put("nombre",nombre);
-                parametros.put("email",email);
-                parametros.put("nacionalidad",nacionalidad);
-                parametros.put("imagen",imagen);
+                    Map<String, String> parametros = new HashMap<>();
+                    parametros.put("nombre", nombre);
+                    parametros.put("email", email);
+                    parametros.put("nacionalidad", nacionalidad);
+                    parametros.put("imagen", imagen);
 
-                return parametros;
-            }
-        };
-        //request.add(stringRequest);
-        stringRequest.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS * 2, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-        VolleySingleton.getIntanciaVolley(getContext()).addToRequestQueue(stringRequest);
+                    return parametros;
+                }
+            };
+            //request.add(stringRequest);
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS * 2, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+            VolleySingleton.getIntanciaVolley(getContext()).addToRequestQueue(stringRequest);
+        }
+
     }
 
     private String convertirImgString(Bitmap bitmap) {

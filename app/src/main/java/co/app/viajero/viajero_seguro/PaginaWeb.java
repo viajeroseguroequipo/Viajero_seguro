@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 
 
 /**
@@ -22,9 +24,11 @@ import android.webkit.WebViewClient;
  * Use the {@link PaginaWeb#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PaginaWeb extends Fragment {
+public class PaginaWeb extends Fragment{
 
     public WebView mWebView;
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -69,6 +73,8 @@ public class PaginaWeb extends Fragment {
         }
 
 
+
+
     }
 
     @Override
@@ -88,12 +94,14 @@ public class PaginaWeb extends Fragment {
 
         return v;
 
-        //return view;
+
 
        // return inflater.inflate(R.layout.fragment_pagina_web, container, false);
 
 
     }
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

@@ -123,21 +123,28 @@ public class ConsultarUsuarioFragment extends Fragment implements Response.Liste
 
     private void cargarWebService() {
 
-        progreso=new ProgressDialog(getContext());
-        progreso.setMessage("Consultando...");
-        progreso.show();
 
-        String ip=getString(R.string.ip);
+        if (campoNombre.getText().toString().isEmpty() ) {
 
-        String url=ip+"archivos/ejemploBDRemota/wsJSONConsultarUsuarioImagen.php?nombre="
-                +campoNombre.getText().toString();
+            Toast.makeText(getContext(), "Ingrese El Nombre a Consultar", Toast.LENGTH_SHORT).show();
 
-        jsonObjectRequest=new JsonObjectRequest(Request.Method.GET,url,null,this,this);
-       // request.add(jsonObjectRequest);
-        VolleySingleton.getIntanciaVolley(getContext()).addToRequestQueue(jsonObjectRequest);
+        } else {
+
+            progreso = new ProgressDialog(getContext());
+            progreso.setMessage("Consultando...");
+            progreso.show();
+
+            String ip = getString(R.string.ip);
+
+            String url = ip + "archivos/ejemploBDRemota/wsJSONConsultarUsuarioImagen.php?nombre="
+                    + campoNombre.getText().toString();
+
+            jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
+            // request.add(jsonObjectRequest);
+            VolleySingleton.getIntanciaVolley(getContext()).addToRequestQueue(jsonObjectRequest);
+        }
+
     }
-
-
     @Override
     public void onErrorResponse(VolleyError error) {
         progreso.hide();

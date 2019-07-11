@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
 
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text="l "
                 android:visibility="gone" />
 
             <TextView
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -142,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -178,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=""
                 android:visibility="gone" />
 
             <TextView
@@ -196,7 +196,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -205,7 +205,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -214,7 +214,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="-14dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -223,7 +223,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=""
                 android:visibility="gone" />
 
             <TextView
@@ -232,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -241,7 +241,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -250,7 +250,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=""
                 android:visibility="gone" />
 
             <TextView
@@ -268,7 +268,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -277,7 +277,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -295,7 +295,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -304,7 +304,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -313,7 +313,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -322,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -331,7 +331,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="211dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text="l "
                 android:visibility="gone" />
 
             <TextView
@@ -340,7 +340,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="211dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -349,7 +349,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="211dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <TextView
@@ -358,7 +358,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="211dp"
                 android:layout_marginTop="-24dp"
-                android:text="Codigo Postal "
+                android:text=" "
                 android:visibility="gone" />
 
             <Button
@@ -369,7 +369,7 @@
                 android:background="@color/colorPrimary"
                 android:contextClickable="false"
                 android:drawableRight="@android:drawable/ic_menu_search"
-                android:text="INFOMRACION GENERAL"
+                android:text="INFORMACION GENERAL"
                 android:textColor="?attr/colorBackgroundFloating"
                 android:textSize="12sp" />
 
@@ -410,7 +410,7 @@
                 android:background="@color/colorPrimary"
                 android:contextClickable="false"
                 android:drawableRight="@android:drawable/ic_menu_directions"
-                android:text="TRASNPORTE"
+                android:text="TRANSPORTE"
                 android:textColor="?attr/colorBackgroundFloating"
                 android:textSize="12sp" />
 
