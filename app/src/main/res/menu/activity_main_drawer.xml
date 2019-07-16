@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="INICIO" />
+        <item
+            android:id="@+id/nav_consulta_gral_img_url"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="ANTES DE VIAJAR" />
+        <item
+            android:id="@+id/nav_consulta_gral_img"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="DURANTE EL VIAJE" />
+
+        <item
+            android:id="@+id/nav_consulta_Url"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="DESPUES DEL VIAJE" />
+
+        <item
+            android:id="@+id/nav_consulta_blog"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="CONOCE NUESTRO BLOG" />
+        <item
+            android:id="@+id/nav_registro"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="REGISTRAR USUARIO" />
+        <item
+            android:id="@+id/nav_consulta_individual"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="CONSULTAR USUARIO" />
+    </group>
+
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/nav_desarrollador"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="DESARROLLADORES" />
+        </menu>
+    </item>
+
+</menu>

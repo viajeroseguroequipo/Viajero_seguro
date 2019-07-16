@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VIAJERO SEGURO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Dejanos tu Aporte</string>
+
+    <string name="ip2">http://192.168.0.20/</string>
+    <string name="ip">https://www.colaboraweb.com/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Ver Detalles</string>
+    <string name="title_activity_ver_informacion">Ver Información</string>
+    <string name="title_activity_ver_informacion_ciudad">Información Ciudad</string>
+    <string name="title_activity_ver_informacion_sitios">Información Sitios</string>
+    <string name="title_activity_ver_informacion_alojamiento">Información Alojamientos</string>
+    <string name="title_activity_ver_informacion_trasnporte">Información Trasnporte</string>
+    <string name="title_activity_pagina_web">Pagina Web</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="co.app.viajero.viajero_seguro.Ver_informacion"
+    tools:showIn="@layout/activity_ver_informacion">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:text="Pais"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_view"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="150dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="Idioma"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_view1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="150dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="Moneda"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_view2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="150dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:text="Requisitos de Ingreso"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+
+
+            <ScrollView
+                android:layout_width="380dp"
+                android:layout_height="400dp">
+        <TextView
+            android:id="@+id/txt_view3"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/Regresar"
+                android:layout_width="120dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Volver"
+                tools:layout_editor_absoluteX="34dp"
+                android:textColor="?attr/colorBackgroundFloating" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

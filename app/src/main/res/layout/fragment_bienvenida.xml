@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/colombia"
+    tools:context="co.app.viajero.viajero_seguro.fragments.BienvenidaFragment">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="VIAJERO SEGURO TU APP INFORMATIVA PARA QUE TU VIAJE SEA MAS FACIL"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154dp"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="casual"
+        android:text="Para Navegar en nuestra aplicación  utiliza nuestro menú de la parte Izquierda "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="54dp"
+        android:text="Visitanos en nuestro Blog"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:text="https://viajeroseguro2019.blogspot.com/"
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
